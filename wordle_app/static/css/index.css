@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600');
+
+body {
+  background: #c1bdba;
+  font-family: Arial, sans-serif; /* Changed font to Arial */
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.tab-group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tab-group li {
+  float: left;
+}
+
+.tab-group li a {
+  display: block;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.tab-group li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+
+.tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 20px; /* Adjusted margin */
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 20px; /* Reduced margin */
+}
+
+input {
+  font-size: 18px; /* Reduced font size */
+  display: block;
+  width: 100%;
+  padding: 10px; /* Adjusted padding */
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 4px; /* Added slight border radius */
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+input:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 4px; /* Added border radius */
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  transition: all .5s ease;
+}
+
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  background: rgba(19, 35, 47, 0.9);
+  padding: 35px;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
